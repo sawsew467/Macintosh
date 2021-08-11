@@ -1,22 +1,31 @@
 img {
     width: 100%;
-    header: auto;
+    height: auto;
 }
 
 #header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 0 30px;
+}
+
+.header-container {
     display: flex;
     align-items: center;
     height: 92px;
     color: #757575;
 }
 
-.header__logo {
+.header-container__logo {
     width: 185px;
+    height: 40px;
     padding-right: 25px;
     cursor: pointer;
 }
 
-.header__search form {
+.header-container__search form {
     background-color: #f7f6fb;
     line-height: 36px;
     border: 1px solid #ddd;
@@ -27,37 +36,96 @@ img {
     font-weight: lighter;
 }
 
-.header__search i {
+.header-container__search i {
     padding-left: 20px;
     padding-right: 10px;
     cursor: pointer;
 }
 
-.header__search input {
+.header-container__search input {
     border: none;
     background-color: #f7f6fb;
 }
 
-.header__search input:focus {
+.header-container__search input:focus {
     border: 1px solid #5467e7;
 }
 
-.header__nav {
+.header-container__nav {
     display: flex;
     flex-grow: 1;
     padding-left: 30px;
     cursor: pointer;
 }
 
-.header__nav li {
+.header-container__nav li {
     padding: 0 20px;
 }
 
-.header__nav li:hover {
+.header-container__nav li:hover {
     color: #5467e7;
 }
 
-.header__user-avt {
+.header-container__user-avt {
     display: flex;
     cursor: pointer;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	background-color: lightgrey;
+}
+::-webkit-scrollbar-thumb{
+	background-color: grey;
+	border-radius: 5px;
+
+}
+
+.sidebar {
+    display: inline-block;
+    position: fixed;
+    top: 92px;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    width: 240px;
+    padding: 0 30px;
+    font-size: 16px;
+    color: #8182a0;
+}
+
+.sidebar .title {
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.active > .title {
+    color: #5467e7;
+    background-color: #f1f4fd;
+}
+
+.sidebar .title i {
+    font-size: 24px;
+    padding-right: 12px;
+}
+
+.sidebar li {
+    margin-left: 40px;
+    list-style: disc;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover  {
+    color: #5467e7;
+}
+
+.sidebar .banner img {
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgb(0 0 0 / 15%);
+}
+
+.content {
+    background-color: #f9f8fd;
 }
