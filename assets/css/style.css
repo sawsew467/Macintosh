@@ -84,7 +84,7 @@ hr {
     cursor: pointer;
 }
 
-::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
 	width: 0;
 	background-color: lightgrey;
 }
@@ -219,7 +219,7 @@ hr {
 }
 
 .tutorial h2 {
-    width: 50%;
+    width: 72%;
     font-size: 24px;
     color: #262D52;
     line-height: 30px;
@@ -267,19 +267,19 @@ hr {
 }
 
 
-.last-update__list-item {
+.list-item {
     display: flex;
     flex-direction: row;
     padding-bottom: 16px;
     padding-top: 16px;
 }
 
-.last-update__list-item img {
+.list-item img {
     width: 60px;
     height: 60px;
 }
 
-.last-update__list-item .item-name {
+.list-item .item-name {
     padding: 0 15px;
     font-size: 15px;
     opacity: 0.9;
@@ -383,5 +383,44 @@ hr {
 
 .tutorial-section {
     padding-left: 15px;
+    display: inline-block;
+    height: 50%;
 }
 
+.tutorial-mac {
+    height: calc(100% - 30px);
+    width: 100%;
+    margin-top: 15px;
+    background-color: #ffec88;
+    background-image: url(../img/slider/Teamwork-and-Startup.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    border-radius: 12px;
+    padding: 30px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tutorial-mac h2 {
+    color: #262d5e;
+    font-size: 22px;
+    font-weight: normal;
+    width: 80%;
+}
+
+.tutorial-mac p {
+    color: #8182A0;
+    margin-top: 10px;
+    width: 80%;
+    font-size: 14px;
+}
+
+.film-section {
+    padding: 0 20px;
+}
+
+.film-section .list-item{
+    padding-right: 0;
+    padding-left: 0;
+}
