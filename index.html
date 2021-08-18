@@ -62,10 +62,16 @@
         <div class="content">
             <div class="row slider-section">
                 <div class="slider">
-                    <h2>Bật Anywhere, khắc phục lỗi damage, can’t open… by developer</h2>
-                    <p>Thủ thuật cần khi cài ứng dụng từ bên thứ ba.</p>
+                    <div class="slide1 slide active">
+                        <h2>Bật Anywhere, khắc phục lỗi damage, can’t open… by developer</h2>
+                        <p>Thủ thuật cần khi cài ứng dụng từ bên thứ ba.</p>
+                    </div>
+                    <div class="slide2 slide ">
+                        <h2>Tham gia Macintosh Viet Nam Group</h2>
+                        <p>Group nho nhỏ hoạt động trên Facebook.</p>
+                    </div>
                     <div class="dot-list">
-                        <button class="dot dot--active"></button>
+                        <button class="dot active"></button>
                         <button class="dot"></button>
                     </div>
                 </div>
@@ -187,13 +193,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="popular-section box-section col l-6">
+                <div class="popular-section box-section col l-6" style="padding-bottom: 0;">
                     <h2 class="heading-section">
                         Phổ biến cho macOS
                         <a href="#" class="show-all">Tất cả</a>
                     </h2>
                     <div class="content-container">
-                        <div class="row">
+                        <div class="row" style="margin-top:-15px;">
                             <div class="popular-item col l-6">
                                 <div class="popular-item__header">
                                     <img src="./assets/img/popular/Things v3.14.1.png" alt="">
@@ -390,7 +396,50 @@
                     </div>  
                 </div>
             </div>
+            <div class="error-section box-section">
+                <h2 class="heading-section" style="padding-top: 0;">
+                    Tổng hợp lỗi và cách cài đặt phần mềm
+                    <a href="#" class="show-all">Tất cả</a>
+                </h2>
+                <div class="row">
+                    <div class="error-item col l-4">
+                        <img src="./assets/img/error/err1.png" alt="">
+                        <div class="item-name">
+                            <h3>Tổng hợp lỗi của bộ cài Adobe CC</h3>
+                            <p class="sub-name">Hướng dẫn cài đặt</p>
+                        </div>
+                    </div>
+                    <div class="error-item col l-4">
+                        <img src="./assets/img/error/err2.jpg" alt="">
+                        <div class="item-name">
+                            <h3>Bật Anywhere, khắc phục lỗi damage..developer</h3>
+                            <p class="sub-name">Hướng dẫn cài đặt</p>
+                        </div>
+                    </div>
+                    <div class="error-item col l-4">
+                        <img src="./assets/img/error/err3.png" alt="">
+                        <div class="item-name">
+                            <h3>Hướng dẫn gỡ bỏ ứng dụng đã cài đặt</h3>
+                            <p class="sub-name">Hướng dẫn cài đặt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <script>
+        const dots = document.querySelectorAll('.dot');
+        const slides = document.querySelectorAll('.slide');
+        
+        dots.forEach(function(dot, index) {
+            var slide = slides[index];
+            dot.onclick = function() {
+                document.querySelector('.dot.active').classList.remove('active');
+                dot.classList.add('active');
+                document.querySelector('.slide.active').classList.remove('active');
+                slide.classList.add('active');
+            }
+        })
+    </script>
 </body>
 </html>
