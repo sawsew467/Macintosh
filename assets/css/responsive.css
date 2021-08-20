@@ -1,11 +1,95 @@
 @media (min-width: 1024px) {
+    .bars {
+        display: none;
+    }
+
+    .header-container__search {
+        display: block;
+    }
+
+    .header-container__nav {
+        display: flex;
+    }
+
 
 }
 
 @media (min-width: 740px) and (max-width:1023px) {
-  
+    .header-container {
+        justify-content: space-between;
+    }
+
+    .header-container {
+        height: 62px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 62px;
+        bottom: 0;
+        left: -250px;
+        overflow-y: auto;
+        width: 240px;
+        padding: 0 30px;
+        font-size: 16px;
+        color: #8182a0;
+    }
+
+    .content {
+        top: 62px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .tutorial {
+        width: 100%;
+        margin: 0;
+
+    }
 }
 
 @media (max-width: 739px) {
-    
+    .header-container {
+        justify-content: space-between;
+    }
+
+    .header-container {
+        height: 62px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 62px;
+        bottom: 0;
+        left: -250px;
+        overflow-y: auto;
+        width: 240px;
+        padding: 0 30px;
+        font-size: 16px;
+        color: #8182a0;
+    }
+
+    .content {
+        top: 62px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .tutorial {
+        width: 100%;
+        margin: 0;
+
+    }
 }

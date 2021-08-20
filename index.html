@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="icon" href="https://scontent-hkg4-2.xx.fbcdn.net/v/t1.6435-9/171508596_4169819859776814_6507377214289571288_n.png?_nc_cat=110&ccb=1-4&_nc_sid=09cbfe&_nc_ohc=gOHoa1kuNBIAX-7Qnr2&_nc_ht=scontent-hkg4-2.xx&oh=d3bf2cdc034a164b01bcf8010ddf4f96&oe=613838FC" type="image/gif" sizes="16x16">
     <title>Tải Phần Mềm Cho Macbook, Kho ứng Dụng Macbook</title>
 </head>
@@ -17,6 +17,9 @@
         <div id="header">
             <div class="header-container">
                 <div class="header-container__logo">
+                    <div class="bars">
+                        <i class="fas fa-bars"></i>
+                    </div>
                     <img src="./assets/img/logo/logo-macintosh-1536x353.png" alt="" class="logo">
                 </div>
                 <div class="header-container__search">
@@ -512,6 +515,28 @@
                 slide.classList.add('active');
             }
         })
+
+        var bars = document.querySelector('.bars');
+        
+
+        bars.onclick = function() {
+            var isActiveBars = this.classList.contains('active');('.active');
+            var sidebar = document.querySelector('.sidebar')
+            var content = document.querySelector('.content');
+            console.log(isActiveBars);
+            if (!isActiveBars) {
+                sidebar.classList.add('active');
+                sidebar.classList.add('active');
+                content.classList.add('active');
+            } else {
+                sidebar.classList.remove('active');
+                content.classList.remove('active');
+            }
+            console.log(sidebar);
+            console.log(content);
+        }
+
+
     </script>
 </body>
 </html>

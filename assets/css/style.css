@@ -32,10 +32,22 @@ hr {
 }
 
 .header-container__logo {
+    display: flex;
+    align-items: center;
     width: 185px;
     height: 40px;
     padding-right: 25px;
     cursor: pointer;
+}
+
+.bars {
+    font-size: 20px;
+    margin-right: 12px;
+    color:#5467E7;
+}
+
+.header-container__search {
+    display: none;
 }
 
 .header-container__search form {
@@ -66,7 +78,7 @@ hr {
 }
 
 .header-container__nav {
-    display: flex;
+    display: none;
     flex-grow: 1;
     padding-left: 30px;
     cursor: pointer;
@@ -96,7 +108,6 @@ hr {
 }
 
 .sidebar {
-    display: inline-block;
     position: fixed;
     top: 92px;
     bottom: 0;
