@@ -101,11 +101,6 @@ hr {
 	width: 0;
 	background-color: lightgrey;
 }
-::-webkit-scrollbar-thumb{
-	background-color: grey;
-	border-radius: 5px;
-
-}
 
 .sidebar {
     position: fixed;
@@ -117,6 +112,16 @@ hr {
     padding: 0 30px;
     font-size: 16px;
     color: #8182a0;
+    transition: 0.3s;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.title:hover {
+    color: #5467e7;
+    background-color: #f1f4fd;
 }
 
 .sidebar .title {
@@ -160,6 +165,11 @@ hr {
     padding: 30px;
     background-color: #f9f8fd;
     border-radius: 12px;
+    transition: 0.3s;
+}
+
+.content.active {
+    left: 240px;
 }
 
 .content > .row {

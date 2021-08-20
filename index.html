@@ -525,10 +525,11 @@
             var content = document.querySelector('.content');
             console.log(isActiveBars);
             if (!isActiveBars) {
-                sidebar.classList.add('active');
+                bars.classList.add('active');
                 sidebar.classList.add('active');
                 content.classList.add('active');
             } else {
+                bars.classList.remove('active');
                 sidebar.classList.remove('active');
                 content.classList.remove('active');
             }
