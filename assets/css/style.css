@@ -473,6 +473,7 @@ hr {
     display: block;
     width: 100%;
     height: 260px;
+    object-fit: cover;
 }
 
 .error-item .item-name {
@@ -508,7 +509,7 @@ hr {
     left: 0;
 }
 
-.main-game .game-item__content > span {
+.game-type {
     background-color: #fff;
 }
 
@@ -530,6 +531,7 @@ hr {
 
 .game-item img {
     width: 35%;
+    object-fit: cover;
 }
 
 .game-item__content {
@@ -540,7 +542,7 @@ hr {
     padding: 15px 15px 15px 20px;
 }
 
-.game-item__content > span {
+.game-type {
     font-size: 12px;
     border-radius: 12px;
     box-shadow: 0px 1px 2px rgba(38, 45, 82, 0.12);
@@ -552,14 +554,14 @@ hr {
     text-transform: uppercase;
 }
 
-.game-item__content > span:hover {
+.game-type:hover {
     color: #fff;
     background-color:#5467e7;
 }
 
 .game-item__content h3 {
     font-size: 14px;
-    padding: 15px 0;
+    margin: 15px 0;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -577,4 +579,22 @@ hr {
 
 .game-item__content i {
     padding-right: 4px;
+}
+
+.hotgame-section {
+    width: 100%;
+    height: 100px;
+}
+
+.hotgame-section .type-list {
+    display: flex;
+    margin-top: 20px;
+}
+
+.hotgame-section .type-list li {
+    margin-right: 8px;
+}
+
+.hotgame-section h3 {
+    margin: 16px 0;
 }
