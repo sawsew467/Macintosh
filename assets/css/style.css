@@ -156,6 +156,7 @@ hr {
     box-shadow: 0 0 20px rgb(0 0 0 / 15%);
 }
 
+
 .content {
     width: calc(100% - 240px);
     display: inline-block;
@@ -583,7 +584,6 @@ hr {
 
 .hotgame-section {
     width: 100%;
-    height: 100px;
 }
 
 .hotgame-section .type-list {
@@ -597,4 +597,44 @@ hr {
 
 .hotgame-section h3 {
     margin: 16px 0;
+}
+
+.hotgame-item {
+    position: relative;
+}
+
+.hotgame-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.play-btn {
+    position: absolute;
+    width: calc(100% - 30px);
+    height: 200px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-svg {
+    width: 50px; 
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(38,45,82,.6);
+}
+
+.play-btn i {
+    font-size:28px;
+    color: #fff;
+    transform: translateX(10%);
 }
