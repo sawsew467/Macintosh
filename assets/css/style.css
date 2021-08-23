@@ -163,11 +163,15 @@ hr {
     position: relative;
     left: 240px;
     top: 92px;
+    transition: 0.3s;
+}
+
+.content-container {
     padding: 30px;
     background-color: #f9f8fd;
     border-radius: 12px;
-    transition: 0.3s;
 }
+
 
 .content.active {
     left: 240px;
@@ -425,6 +429,10 @@ hr {
     color: #666;
 }
 
+.t-f {
+    width: 50%;
+}
+
 .tutorial-section {
     padding-left: 17px;
     display: inline-block;
@@ -462,6 +470,11 @@ hr {
 
 .film-section {
     padding: 0 20px;
+    margin-top: 70px;
+}
+
+.film-section .heading-section {
+    margin-bottom: 0;
 }
 
 .film-section .list-item{
@@ -637,4 +650,14 @@ hr {
     font-size:28px;
     color: #fff;
     transform: translateX(10%);
+}
+
+#footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer a {
+    text-decoration: none;
+    color:#5467E7;
 }
