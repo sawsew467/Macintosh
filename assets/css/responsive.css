@@ -39,6 +39,10 @@
         color: #8182a0;
     }
 
+    .content-container {
+        padding: 15px;
+    }
+
     .content {
         top: 62px;
         left: 0;
@@ -48,7 +52,7 @@
     .slider {
         width: 100%;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
 
     .t-f {
@@ -99,6 +103,10 @@
         padding: 0 30px;
         font-size: 16px;
         color: #8182a0;
+    }
+
+    .content-container {
+        padding: 15px;
     }
 
     .content {
