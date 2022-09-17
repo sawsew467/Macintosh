@@ -1,0 +1,183 @@
+@media (min-width: 1024px) {
+    .bars {
+        display: none;
+    }
+
+    .header-container__search {
+        display: block;
+    }
+
+    .header-container__nav {
+        display: flex;
+    }
+
+
+}
+
+@media (min-width: 740px) and (max-width:1023px) {
+    #main {
+        overflow-x: hidden; 
+    }
+    
+    .header-container {
+        justify-content: space-between;
+    }
+
+    .header-container {
+        height: 62px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 62px;
+        bottom: 0;
+        left: -250px;
+        overflow-y: auto;
+        width: 240px;
+        padding: 0 30px;
+        font-size: 16px;
+        color: #8182a0;
+    }
+    .popular-section {
+        padding-right: 0;
+    }
+    .box-section .content-container {
+        padding: 15px;
+    }
+
+    .popular-section .content-container {
+        padding: 0;
+    }
+
+    .content {
+        top: 62px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .t-f {
+        width: 100%;
+    }
+
+    .tutorial {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .tutorial-mac {
+        height: 100%;
+    }
+
+    .error-item:last-child {
+        display: none;
+    }
+
+    .film-section {
+        margin-bottom: 30px;
+    }
+
+    .game-item {
+        height: 160px;
+    }
+
+
+}
+
+@media (max-width: 739px) {
+    .header-container {
+        justify-content: space-between;
+    }
+
+    .header-container {
+        height: 62px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 62px;
+        bottom: 0;
+        left: -250px;
+        overflow-y: auto;
+        width: 240px;
+        padding: 0 30px;
+        font-size: 16px;
+        color: #8182a0;
+    }
+
+    .box-section .content-container {
+        padding: 15px;
+    }
+
+    .content {
+        top: 62px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide h2 {
+        width: 100%;
+    }
+
+    .slider {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
+    .tutorial {
+        width: 100%;
+        margin: 0;
+    }
+
+    .popular-section {
+        padding-right: 0;
+    }
+
+    .popular-item {
+        padding: 0;
+    }
+
+    .t-f {
+        width: 100%;
+    }
+
+    .tutorial-section {
+        padding: 0;
+    }
+
+    .film-section {
+        padding: 0;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    .newgame-section > .row {
+        flex-direction: column;
+    }
+
+    .main-game > div {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .game-item img {
+        height: 160px;
+        width: 40%;
+    }
+
+    .play-btn {
+        left: 4px;
+        width: calc(100% - 8px);
+    }
+
+    .hotgame-item {
+        margin-bottom: 30px;
+    }
+}
